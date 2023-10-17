@@ -12,7 +12,7 @@
           src="{{ $authorImage.RelPermalink }}"
           {{ if $.Site.Params.enableImageLazyLoading | default true }}
             loading="lazy"
-          {{ end }}
+          {{ end }} no-view
         />
       {{ end }}
     {{ end }}
