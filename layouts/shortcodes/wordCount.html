@@ -1,0 +1,11 @@
+{{ $scratch := newScratch }}
+{{ if eq (.Get 0) "blog" }}
+  {{ range (where .Site.RegularPages "Type" "in" "blog") }}
+    {{ $scratch.Add "wordcount" .WordCount }}
+  {{ end }}
+{{ else if eq (.Get 0) "all" }}
+  {{ range (where .Site.RegularPages "Type" "in" (slice "blog" "weekly")) }}
+    {{ $scratch.Add "wordcount" .WordCount }}
+  {{ end }}
+{{ end }}
+{{ $scratch.Get "wordcount" | lang.NumFmt 0 }} 
