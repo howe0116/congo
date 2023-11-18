@@ -32,7 +32,7 @@
     {{ else }}
       {{ partial "partials/header/basic.html" . }}
     {{ end }}
-    <div class="relative flex flex-col grow">
+    <div class="relative flex flex-col grow mt-12">
       <main id="main-content" class="grow">
         {{ block "main" . }}{{ end }}
         {{ if and (.Site.Params.footer.showScrollToTop | default true) (gt .WordCount 200) }}
