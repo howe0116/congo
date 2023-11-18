@@ -1,0 +1,5 @@
+{{ with index .Site.RegularPages.ByDate.Reverse 0 }}
+<a class="no-underline" href="{{ .RelPermalink }}">
+    {{ with .Params.title }}{{ . }}{{ else }}{{ .Title }}{{ end }}
+</a>
+{{ end }}
