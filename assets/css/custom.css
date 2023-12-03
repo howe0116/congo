@@ -20,3 +20,9 @@ body{
 .mt-4 {
   margin-top: 1rem/* 16px */;
 }
+
+html {
+  font-family:'Fontquan-XinYiJiXiangSong';
+  font-weight:'400';
+  font-size:1.2rem
+};
