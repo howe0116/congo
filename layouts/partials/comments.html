@@ -6,37 +6,38 @@
 <!-- JS -->
 <script src="https://artalk.howe0116.com/dist/Artalk.js"></script>
 <!-- Artalk -->
-<div id="Comments"></div>
+<div id="Comments" ></div>
 <script>
-    const artalk=Artalk.init({
+    const artalk=Artalk.init({ 
         el: '#Comments',
         pageKey: '{{ .Permalink }}',
         pageTitle: '{{ .Title }}',
         server: '{{ $.Site.Params.artalk.server }}',
         site: '{{ $.Site.Params.artalk.site }}',
         // ...你的其他配置
-    });// 定义一个函数用于设置 Artalk 主题
-    function setArtalkTheme() {
-      // 检查 body 或者 html 元素是否包含 "light" 类
-      const isLightMode = document.body.classList.contains("light") || document.documentElement.classList.contains("light");
-    
-      // 检查 body 或者 html 元素是否包含 "dark" 类
-      const isDarkMode = document.body.classList.contains("dark") || document.documentElement.classList.contains("dark");
-    
-      // 调用 Artalk.setDarkMode 方法，将当前模式设置为暗色或亮色
-      artalk.setDarkMode(isDarkMode);
-    }
-    
-    // 初始化时调用 setArtalkTheme 函数，以设置初始主题
-    setArtalkTheme();
-    
-    // 创建一个 MutationObserver 对象，用于监听文档元素的变化
-    const observer = new MutationObserver(() => {
-      // 当文档元素发生变化时，调用 setArtalkTheme 函数，以更新主题
-      document.documentElement.getAttribute("class") && setArtalkTheme();
     });
-    
-    // 开始观察文档元素的变化，监测属性的变化
-    observer.observe(document.documentElement, { attributes: true });
+    // 定义一个函数用于设置 Artalk 主题
+        function setArtalkTheme() {
+            // 检查 body 或者 html 元素是否包含 "light" 类
+            const isLightMode = document.body.classList.contains("light") || document.documentElement.classList.contains("light");
+
+            // 检查 body 或者 html 元素是否包含 "dark" 类
+            const isDarkMode = document.body.classList.contains("dark") || document.documentElement.classList.contains("dark");
+
+            // 调用 Artalk.setDarkMode 方法，将当前模式设置为暗色或亮色
+            artalk.setDarkMode(isDarkMode);
+        }
+
+        // 初始化时调用 setArtalkTheme 函数，以设置初始主题
+        setArtalkTheme();
+
+        // 创建一个 MutationObserver 对象，用于监听文档元素的变化
+        const observer = new MutationObserver(() => {
+            // 当文档元素发生变化时，调用 setArtalkTheme 函数，以更新主题
+            document.documentElement.getAttribute("class") && setArtalkTheme();
+        });
+
+        // 开始观察文档元素的变化，监测属性的变化
+        observer.observe(document.documentElement, { attributes: true });
     
 </script>
