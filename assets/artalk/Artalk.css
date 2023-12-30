@@ -5,7 +5,7 @@
     --at-color-sub: #757575;
     --at-color-grey: #747474;
     --at-color-meta: #697182;
-    --at-color-border: #eceff2;
+    --at-color-border: rgba(var(--color-neutral-300), var(--tw-bg-opacity));
     --at-color-light: #4285f4;
     --at-color-bg: rgba(var(--color-neutral), var(--tw-bg-opacity));
     --at-color-bg-transl: rgba(255, 255, 255, 0.94);
@@ -26,7 +26,7 @@
     --at-color-sub: #e7e7e7;
     --at-color-grey: #fff;
     --at-color-meta: #fff;
-    --at-color-border: #2d3235;
+    --at-color-border: rgba(var(--color-neutral-600), var(--tw-bg-opacity));
     --at-color-light: #687a86;
     --at-color-bg: rgba(var(--color-neutral-800), var(--tw-bg-opacity));
     --at-color-bg-transl: rgba(30, 34, 36, 0.95);
@@ -237,7 +237,7 @@
 
 .atk-comment > .atk-main > .atk-body > .atk-reply-to {
     padding: 5px 15px;
-    border-left: 3px solid var(--at-color-border);
+    border-left: 1px dotted var(--at-color-border);
     margin-bottom: 10px;
     position: relative;
     margin-top: 10px
