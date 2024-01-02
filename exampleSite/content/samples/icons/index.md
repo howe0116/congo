@@ -23,11 +23,8 @@ The full list of built-in icons and their corresponding names can referenced bel
 | blogger              | {{< icon blogger >}}              |
 | bug                  | {{< icon bug >}}                  |
 | check                | {{< icon check >}}                |
-| chevron-down         | {{< icon chevron-down >}}         |
-| chevron-up           | {{< icon chevron-up >}}           |
 | circle-info          | {{< icon circle-info >}}          |
 | codepen              | {{< icon codepen >}}              |
-| coffee               | {{< icon coffee >}}               |
 | comment              | {{< icon comment >}}              |
 | dev                  | {{< icon dev >}}                  |
 | dribbble             | {{< icon dribbble >}}             |
@@ -38,7 +35,6 @@ The full list of built-in icons and their corresponding names can referenced bel
 | foursquare           | {{< icon foursquare >}}           |
 | github               | {{< icon github >}}               |
 | gitlab               | {{< icon gitlab >}}               |
-| globe                | {{< icon globe >}}                |
 | google               | {{< icon google >}}               |
 | hashnode             | {{< icon hashnode >}}             |
 | instagram            | {{< icon instagram >}}            |
@@ -71,14 +67,11 @@ The full list of built-in icons and their corresponding names can referenced bel
 | sun                  | {{< icon sun >}}                  |
 | tag                  | {{< icon tag >}}                  |
 | telegram             | {{< icon telegram >}}             |
-| threads              | {{< icon threads >}}              |
 | tiktok               | {{< icon tiktok >}}               |
-| translate            | {{< icon translate >}}            |
 | triangle-exclamation | {{< icon triangle-exclamation >}} |
 | tumblr               | {{< icon tumblr >}}               |
 | twitch               | {{< icon twitch >}}               |
 | twitter              | {{< icon twitter >}}              |
 | whatsapp             | {{< icon whatsapp >}}             |
-| x-twitter            | {{< icon x-twitter >}}            |
 | xmark                | {{< icon xmark >}}                |
 | youtube              | {{< icon youtube >}}              |
