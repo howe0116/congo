@@ -206,7 +206,7 @@
 }
 
 .atk-comment > .atk-main > .atk-body > .atk-content.atk-type-collapsed {
-    border: 3px solid var(--at-color-bg-grey);
+    border: 3px dotted var(--at-color-bg-grey);
     border-bottom: 0;
     padding: 5px 10px;
     border-radius: 6px 6px 0 0;
