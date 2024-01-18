@@ -20,6 +20,10 @@ body{
 .mt-4 {
   margin-top: 1rem/* 16px */;
 }
+:is(.dark .dark\:text-neutral-200) {
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-neutral-200), var(--tw-text-opacity));
+}
 
 
 html {
