@@ -4,7 +4,7 @@
     {{ $scratch.Add "wordcount" .WordCount }}
   {{ end }}
 {{ else if eq (.Get 0) "all" }}
-  {{ range (where .Site.RegularPages "Type" "in" (slice "posts" "weekly")) }}
+  {{ range (where .Site.RegularPages "Type" "in" (slice "posts" "diary")) }}
     {{ $scratch.Add "wordcount" .WordCount }}
   {{ end }}
 {{ end }}

@@ -82,7 +82,7 @@
       {{ if .Site.Params.footer.showCopyright | default true }}
         <p class="text-sm text-neutral-500 dark:text-neutral-400">
           {{- with site.Copyright }}
-            {{ . | emojify | markdownify }}
+          {{ replace . "{Year}" now.Year | emojify | markdownify }}
           {{- else }}
             &copy;
             {{ now.Format "2006" }}
