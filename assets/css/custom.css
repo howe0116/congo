@@ -1,7 +1,7 @@
 
-body{
-  max-width: 58rem!important;
-  
+
+h1,h2 ,h3,h4,h5,h6,a {
+  font-weight: 400!important;
 }
 
 .no-underline {
@@ -20,4 +20,6 @@ body{
   --tw-text-opacity: 1;
   color: rgba(var(--color-neutral-200), var(--tw-text-opacity));
 }
-
+html{
+  font-family: 'FZYanYaSong-GBK-Zhun';
+}
